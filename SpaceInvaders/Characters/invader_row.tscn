@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxn0255o2xwmj"]
+
+[ext_resource type="PackedScene" uid="uid://ct8p7ygn474m" path="res://Characters/invader_a.tscn" id="1_77amd"]
+[ext_resource type="PackedScene" uid="uid://c6b2elgr7ui4e" path="res://Characters/invader_c.tscn" id="2_t3ki2"]
+[ext_resource type="PackedScene" uid="uid://bjfgeubh5cstp" path="res://Characters/invader_b.tscn" id="3_2fnde"]
+
+[node name="InvaderRow" type="Node2D"]
+
+[node name="InvaderA" parent="." instance=ExtResource("1_77amd")]
+position = Vector2(0, 210)
+
+[node name="InvaderA2" parent="." instance=ExtResource("2_t3ki2")]
+
+[node name="InvaderA3" parent="." instance=ExtResource("3_2fnde")]
+position = Vector2(0, 70)
+up_direction = Vector2(0, 1)
+
+[node name="InvaderA4" parent="." instance=ExtResource("3_2fnde")]
+position = Vector2(0, 140)
+
+[node name="InvaderA5" parent="." instance=ExtResource("1_77amd")]
+position = Vector2(0, 280)

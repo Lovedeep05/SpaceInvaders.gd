@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bl20f4ppe8m1b"]
+[gd_scene load_steps=4 format=3 uid="uid://bl20f4ppe8m1b"]
 
 [ext_resource type="Texture2D" uid="uid://cpoxmif0smvji" path="res://assets/images/Ship.png" id="1_2cpj6"]
+[ext_resource type="Script" path="res://Characters/ship.gd" id="1_ra6vq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t2r0h"]
 size = Vector2(60, 20)
 
 [node name="Ship" type="CharacterBody2D"]
+script = ExtResource("1_ra6vq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_2cpj6")

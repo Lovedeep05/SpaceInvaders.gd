@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6b2elgr7ui4e"]
+
+[ext_resource type="Texture2D" uid="uid://bhxercdk7yjuc" path="res://assets/images/InvaderC.png" id="1_4g8us"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fjanh"]
+size = Vector2(48, 32)
+
+[node name="InvaderA" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_4g8us")
+hframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fjanh")
